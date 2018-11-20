@@ -8,19 +8,63 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: steelblue;
+  height: 70px;
+  padding: 20px;
   color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+/* new css for movie component */
+* {
+  box-sizing: border-box;
+}
+ 
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.App-header h2 {
+  margin: 0;
+}
+ 
+.add-movies {
+  text-align: center;
+}
+ 
+.add-movies button {
+  font-size: 16px;
+  padding: 8px;
+  margin: 0 10px 30px 10px;
+}
+ 
+.movie {
+  padding: 5px 25px 10px 25px;
+  max-width: 25%;
+}
+
+.movie-form {
+  width: 250px;
+  margin: 0 auto;
+}
+ 
+.movie-form input, .movie-form textarea {
+  width: 250px;
+  font-size:14px;
+  padding: 5px;
+  margin: 5px;
+}
+ 
+.movie-form button {
+  font-size: 16px;
+  padding: 4px;
+  margin: 10px 10px 30px 10px;
+}
+
 
 @keyframes App-logo-spin {
   from {

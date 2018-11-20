@@ -1,0 +1,31 @@
+{
+  "name": "mini_server_api",
+  "version": "1.0.0",
+  "description": "just for fun",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "app"
+  ],
+  "author": "umerthow",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.3",
+    "cors": "^2.8.5",
+    "debug": "^4.1.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0",
+    "q": "^1.5.1",
+    "serve-favicon": "^2.5.0",
+    "underscore": "^1.9.1"
+  }
+}
