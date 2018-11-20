@@ -11,6 +11,7 @@ class ProductsTable extends Component {
                                         key={i}
                                         product={product}
                                         changeAppMode={this.props.changeAppMode}
+                                        statusMessage={this.props.statusMessage}
                                     />
                                 )
                             })

@@ -13,7 +13,7 @@ class ReadOneProduct extends Component {
             description:'',
             price: 0,
             category_name: '',
-            titleHeader :'Rad Product'
+            titleHeader :'Read Product'
         };
 
       }

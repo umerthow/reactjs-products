@@ -19,7 +19,12 @@ class ProductRow extends Component {
                 <a onClick={() => this.props.changeAppMode('update', this.props.product.id)}
                     className='btn btn-primary m-r-1em'> Edit
                 </a>
-                <a onClick={() => this.props.changeAppMode('delete', this.props.product.id)}
+                <a onClick={(() => {
+                    let status = 'deleted'
+                    this.props.changeAppMode('delete', this.props.product.id)
+                    this.props.statusMessage(status)
+                    })
+                }
                     className='btn btn-danger'> Delete
                 </a>
             </td>

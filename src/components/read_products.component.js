@@ -31,11 +31,22 @@ class ReadProductsComponent extends Component {
         return (
             <div className='overflow-hidder'>
                <Header title={this.state.titleHeader} />
+               {
+                   this.props.status === 'deleted' ?
+                   <div className='alert alert-success'>
+                   Product was deleted.
+                    </div>
+                : null
+
+                }
+
                 <TopActionsComponents changeAppMode={this.props.changeAppMode} />
                 <br/>
                 <ProductsTable  
                     products={filteredProducts}
                     changeAppMode={this.props.changeAppMode}
+
+                    statusMessage={this.props.statusMessage}
                 />
             </div>
         )

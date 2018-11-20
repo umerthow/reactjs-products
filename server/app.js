@@ -120,6 +120,24 @@ app.get('/product/:id', (req, res) => {
    
 })
 
+app.get('/product/delete/:id', (req, res) => {
+    const id = req.params.id
+    if (!id ) return res.send(`no id specified `)
+
+    const DELETE_ONE_PRODUCT_QUERY = 'DELETE  FROM `products`  WHERE id=?';
+
+    connection.query(DELETE_ONE_PRODUCT_QUERY,[id], (err, result) => {
+        if (err) {
+            return err
+        } else {
+            return res.json({
+                data : result 
+            })
+        }
+    })
+   
+})
+
 
 
 app.get('/products', (req, res ) => {
